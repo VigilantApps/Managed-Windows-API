@@ -21,10 +21,6 @@ node {
 				pack(proj: 'ManagedWinapi/ManagedWinapi.csproj').
 				publish(package: 'ManagedWinapi.0.3.0.nupkg')
 		}
-		stage('artifacts'){
-			// artifacts
-			archiveArtifacts '${env.WORKSPACE}/**/*.nupkg'
-		}
   }
 
 }
