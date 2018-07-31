@@ -18,10 +18,13 @@ node {
 		}
 		stage('Publish'){
 			nuget.
-				pack(proj: 'ManagedWinapi/ManagedWinapi.csproj')
+				pack(proj: 'ManagedWinapi/ManagedWinapi.csproj').
+				publish(pacakge: 'ManagedWinapi.0.3.0.nupkg')
+		}
+		stage('artifacts'){
+			// artifacts
+			archiveArtifacts 'build/**'
 		}
   }
 
-  // artifacts
-  archiveArtifacts 'build/**'
 }
