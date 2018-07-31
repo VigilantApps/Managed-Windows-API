@@ -9,8 +9,7 @@ node {
   // build pipeline
   build.pipeline {
 	build.
-		prereqs(dotnetcore: false, dotnetframework: true).
-		codeAnalysis(project: 'alpha-vapps-cb9', ignoreQualityGate: true/*TODO: remove this eventually*/) {
+		 stage('Build') {
 			dotnet.msbuild('ManagedWinapi.sln',"Release", "\"/p:OutDir=${outputdir}\"")
 		}
   }
