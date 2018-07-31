@@ -17,7 +17,7 @@ node {
 		}
 		state('Publish'){
 			nuget.
-				pack('ManagedWinapi\ManagedWinapi.csproj')
+				pack('ManagedWinapi/ManagedWinapi.csproj')
 		}
   }
 
