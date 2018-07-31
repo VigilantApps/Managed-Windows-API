@@ -13,11 +13,12 @@ node {
   build.pipeline {
 	build.
 		 stage('Build') {
-			dotnet.msbuild('ManagedWinapi.sln',"Release", "\"/p:OutDir=${outputdir}\"")
+			dotnet.
+				msbuild('ManagedWinapi.sln',"Release", "\"/p:OutDir=${outputdir}\"")
 		}
 		stage('Publish'){
 			nuget.
-				pack('ManagedWinapi/ManagedWinapi.csproj')
+				pack(proj: 'ManagedWinapi/ManagedWinapi.csproj')
 		}
   }
 
