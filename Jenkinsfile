@@ -4,6 +4,7 @@ node {
   checkout scm
   
   dotnet=dotnetFactory(tool('MSBuild15'), "packages\\xunit.runner.console.2.2.0\\tools\\xunit.console.exe")
+	build=buildFactory()
   
   // build pipeline
   build.pipeline {
