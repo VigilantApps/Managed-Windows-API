@@ -19,7 +19,7 @@ node {
 		stage('Publish'){
 			nuget.
 				pack(proj: 'ManagedWinapi/ManagedWinapi.csproj').
-				publish(pacakge: 'ManagedWinapi.0.3.0.nupkg')
+				publish(package: 'ManagedWinapi.0.3.0.nupkg')
 		}
 		stage('artifacts'){
 			// artifacts
