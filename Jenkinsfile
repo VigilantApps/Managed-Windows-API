@@ -15,7 +15,7 @@ node {
 		 stage('Build') {
 			dotnet.msbuild('ManagedWinapi.sln',"Release", "\"/p:OutDir=${outputdir}\"")
 		}
-		state('Publish'){
+		stage('Publish'){
 			nuget.
 				pack('ManagedWinapi/ManagedWinapi.csproj')
 		}
