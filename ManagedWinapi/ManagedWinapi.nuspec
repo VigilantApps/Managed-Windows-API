@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ManagedWinapi</id>
+    <version>0.3.0</version>
+    <title>ManagedWinApi</title>
+    <authors>Schierlm</authors>
+    <owners />
+    <projectUrl>http://mwinapi.sourceforge.net/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      A collection of .NET components that wrap PInvoke calls to access native API by managed code.
+
+      Package maintained by Fraak.
+    </description>
+    <summary />
+    <language>en-GB</language>
+    <tags>WinApi Native</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\ManagedWinapi.dll" target="lib\net47" />
+    <file src="bin\Release\ManagedWinapi.pdb" target="lib\net47" />
+  </files>
+</package>
